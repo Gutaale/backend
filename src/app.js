@@ -16,12 +16,6 @@ app.use('/books', bookRoute)
 
 mongoose.connect(process.env.DATABASE_CONNECTION_URL).then(()=>console.log("Connected"))
 
-// const user = new User({
-//     name: 'Mohamed',
-//     email: 'mohamed@gmail.com',
-//   });
-
-//   await user.save()
 app.listen(PORT, ()=>{
     console.log(`Server is running on http://localhost:${PORT}`)
 })
